@@ -1,0 +1,507 @@
+LOCUS       CE1CG13                 6646 bp    DNA     circular BCT 06-APR-2020
+DEFINITION  Escherichia coli plasmid ColE1, complete sequence.
+ACCESSION   J01566
+VERSION     J01566.1
+DBLINK      BioSample: SAMN14225625
+KEYWORDS    .
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (bases 1008 to 1370)
+  AUTHORS   Tomizawa,J.I., Ohmori,H. and Bird,R.E.
+  TITLE     Origin of replication of colicin E1 plasmid DNA
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 74 (5), 1865-1869 (1977)
+   PUBMED   325558
+REFERENCE   2  (bases 1410 to 1599)
+  AUTHORS   Bastia,D.
+  TITLE     Determination of restriction sites and the nucleotide sequence
+            surrounding the relaxation site of ColE1
+  JOURNAL   J. Mol. Biol. 124 (4), 601-639 (1978)
+   PUBMED   712849
+REFERENCE   3  (bases 1 to 1613; 6577 to 6646)
+  AUTHORS   Oka,A., Nomura,N., Morita,M., Sugisaki,H., Sugimoto,K. and
+            Takanami,M.
+  TITLE     Nucleotide sequence of small ColE1 derivatives: structure of the
+            regions essential for autonomous replication and colicin E1
+            immunity
+  JOURNAL   Mol. Gen. Genet. 172 (2), 151-159 (1979)
+   PUBMED   384144
+REFERENCE   4  (bases 1 to 192; 384 to 519; 6644 to 6646)
+  AUTHORS   Patient,R.K.
+  TITLE     Characterization of in vitro transcription initiation and
+            termination sites in Col E1 DNA
+  JOURNAL   Nucleic Acids Res. 6 (8), 2647-2665 (1979)
+   PUBMED   379827
+REFERENCE   5  (bases 623 to 832)
+  AUTHORS   Morita,M. and Oka,A.
+  TITLE     The structure of a transcriptional unit on colicin E1 plasmid
+  JOURNAL   Eur. J. Biochem. 97 (2), 435-443 (1979)
+   PUBMED   380993
+REFERENCE   6  (bases 4783 to 5353)
+  AUTHORS   Ebina,Y., Kishi,F., Miki,T., Kagamiyama,H., Nakazawa,T. and
+            Nakazawa,A.
+  TITLE     The nucleotide sequence surrounding the promoter region of colicin
+            E1 gene
+  JOURNAL   Gene 15 (2-3), 119-126 (1981)
+   PUBMED   6271636
+REFERENCE   7  (bases 639 to 753)
+  AUTHORS   Tomizawa,J.
+  TITLE     Control of ColE1 plasmid replication: the process of binding of RNA
+            I to the primer transcript
+  JOURNAL   Cell 38 (3), 861-870 (1984)
+   PUBMED   6207934
+REFERENCE   8  (bases 1 to 6646)
+  AUTHORS   Chan,P.T., Ohmori,H., Tomizawa,J. and Lebowitz,J.
+  TITLE     Nucleotide sequence and gene organization of ColE1 DNA
+  JOURNAL   J. Biol. Chem. 260 (15), 8925-8935 (1985)
+   PUBMED   2991225
+REFERENCE   9  (bases 5046 to 5110)
+  AUTHORS   Parker,R.C.
+  TITLE     Mitomycin C-induced bidirectional transcription from the colicin E1
+            promoter region in plasmid ColE1
+  JOURNAL   Biochim. Biophys. Acta 868 (1), 39-44 (1986)
+   PUBMED   3092859
+REFERENCE   10 (bases 57 to 123)
+  AUTHORS   Zhang,S.P., Yan,L.F. and Zubay,G.
+  TITLE     Regulation of gene expression in plasmid ColE1: delayed expression
+            of the kil gene
+  JOURNAL   J. Bacteriol. 170 (12), 5460-5467 (1988)
+   PUBMED   3142845
+REFERENCE   11 (sites)
+  AUTHORS   Stirling,C.J., Szatmari,G., Stewart,G., Smith,M.C. and
+            Sherratt,D.J.
+  TITLE     The arginine repressor is essential for plasmid-stabilizing
+            site-specific recombination at the ColE1 cer locus
+  JOURNAL   EMBO J. 7 (13), 4389-4395 (1988)
+   PUBMED   3149585
+REFERENCE   12 (sites)
+  AUTHORS   Inoue,N. and Uchida,H.
+  TITLE     Transcription and initiation of ColE1 DNA replication in
+            Escherichia coli K-12
+  JOURNAL   J. Bacteriol. 173 (3), 1208-1214 (1991)
+   PUBMED   1846858
+COMMENT     The L (light) strand is shown.  This sequence was kindly supplied
+            over computer network by J.Lebowitz (04-APR-1985).  The open
+            reading frames noted by [8] are named in FEATURES by the molecular
+            mass of their predicted products or by the names given by [8].
+FEATURES             Location/Qualifiers
+     source          1..6646
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:562"
+                     /clone="pEW2762 and pMM1"
+                     /plasmid="ColE1"
+     mRNA            join(5056..6646,1..>585)
+                     /product="colE1-kil mRNA"
+                     /citation=[8]
+     CDS             join(5140..6646,1..62)
+                     /codon_start=1
+                     /transl_table=11
+                     /product="colicin E1 protein (cea)"
+                     /protein_id="AAB59121.1"
+                     /translation="METAVAYYKDGVPYDDKGQVIITLLNGTPDGSGSGGGGGKGGSK
+                     SESSAAIHATAKWSTAQLKKTQAEQAARAKAAAEAQAKAKANRDALTQRLKDIVNEAL
+                     RHNASRTPSATELAHANNAAMQAEAERLRLAKAEEKARKEAEAAEKAFQEAEQRRKEI
+                     EREKAETERQLKLAEAEEKRLAALSEEAKAVEIAQKKLSAAQSEVVKMDGEIKTLNSR
+                     LSSSIHARDAEMKTLAGKRNELAQASAKYKELDELVKKLSPRANDPLQNRPFFEATRR
+                     RVGAGKIREEKQKQVTASETRINRINADITQIQKAISQVSNNRNAGIARVHEAEENLK
+                     KAQNNLLNSQIKDAVDATVSFYQTLTEKYGEKYSKMAQELADKSKGKKIGNVNEALAA
+                     FEKYKDVLNKKFSKADRDAIFNALASVKYDDWAKHLDQFAKYLKITGHVSFGYDVVSD
+                     ILKIKDTGDWKPLFLTLEKKAADAGVSYVVALLFSLLAGTTLGIWGIAIVTGILCSYI
+                     DKNKLNTINEVLGI"
+     mRNA            complement(<59..409)
+                     /note="imm mRNA [5],[8]"
+     CDS             complement(59..400)
+                     /codon_start=1
+                     /transl_table=11
+                     /product="colicin E1 immunity protein (imm)"
+                     /protein_id="AAB59122.1"
+                     /translation="MSLRYYIKNILFGLYCTLIYIYLITKNSEGYYFLVSDKMLYAIV
+                     ISTILCPYSKYAIEYIAFNFIKKDFFERRKNLNNAPVAKLNLFMLYNLLCLVLAIPFG
+                     LLGLFISIKNN"
+     misc_difference 83..84
+                     /note="conflict"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 99..100
+                     /note="conflict"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 135
+                     /note="conflict; replace 133..133 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 144
+                     /note="conflict; replace 142..142 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 174
+                     /note="conflict; replace 172..172 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     CDS             448..585
+                     /codon_start=1
+                     /transl_table=11
+                     /product="kil protein"
+                     /protein_id="AAB59123.1"
+                     /translation="MRKRFFVGIFAINLLVGCQANYIPDVQGGTIAPSSSSKLTGIAV
+                     Q"
+     misc_difference 484..485
+                     /note="conflict; replace 101 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 491..492
+                     /note="conflict; replace 107 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 506..512
+                     /note="conflict; replace 121 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 517..519
+                     /note="conflict; replace 121..131 in Nucleic Acids Res. 6,
+                     2647-2665 (1979)"
+                     /citation=[4]
+                     /replace=""
+     misc_difference 528
+                     /note="conflict; replace 528 in J. Biol. Chem. 260,
+                     8925-8935 (1985)"
+                     /citation=[8]
+                     /replace=""
+     CDS             605..895
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="10.2 kd ORF"
+                     /protein_id="AAB59124.1"
+                     /translation="MRSFFSARNLLLANKKTTATNGGLFAGSRATNSFSEGNWLQQSA
+                     DTKYCPSSVAVVGPLLQELCSTVCAIIALLIRLPVAAASGVKACLTGLDSRR"
+     misc_RNA        641..>641
+                     /note="II RNA"
+     misc_RNA        complement(645..751)
+                     /note="I RNA ((3' end +/- 1 bp) [3]"
+     misc_difference 652..653
+                     /note="conflict; replace 31..32 in Eur. J. Biochem. 97,
+                     435-443 (1979)"
+                     /citation=[5]
+                     /replace=""
+     CDS             complement(870..1241)
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="13.8 kd ORF"
+                     /protein_id="AAB59125.1"
+                     /translation="MSKRPGTGRRPRSRRFSIGSAPLTSITKIDAQVRGGETRQDYKA
+                     TRRFPLEAPSCALLFRPCRLPDTCPPFSLREAWRFLIAHAVGISVRCRSFAPSWAVCT
+                     NPPFSPTAAPYPVTIVLSPTR"
+     misc_difference 1111
+                     /note="conflict; replace 1111 in Mol. Gen. Genet. 172,
+                     151-159 (1979)"
+                     /citation=[3]
+                     /replace=""
+     CDS             1189..1350
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="6.0 kd ORF"
+                     /protein_id="AAB59126.1"
+                     /translation="MEKRLLRGLLPVPGLLLTCSFRPYPLILWITVLPFLCESVPLAA
+                     VERPSVASQ"
+     rep_origin      1197
+                     /note="replication origin (+/- 1 bp) [1]"
+     CDS             complement(1238..1408)
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="6.4 kd ORF"
+                     /protein_id="AAB59127.1"
+                     /translation="MPHRCVRRKCTSRRFSASSLTDSLRSVVRLRRAVLTHTKTVTQL
+                     STESGDKAGKNM"
+     CDS             1347..1526
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="6.9 kd ORF"
+                     /protein_id="AAB59128.1"
+                     /translation="MSEEAEKRLDVHFLLTHLCGISHPAWRTFHTIRTDAAWLSQYTL
+                     RYRYVTGSGLRPDTR"
+     misc_difference 1366
+                     /note="conflict; replace 359 in Proc. Natl. Acad. Sci.
+                     U.S.A. 74, 1865-1869 (1977)"
+                     /citation=[1]
+                     /replace=""
+     misc_difference 1416..1417
+                     /note="conflict; replace 7 in J. Mol. Biol. 124, 601-639
+                     (1978)"
+                     /citation=[2]
+                     /replace=""
+     mRNA            1449..>3936
+                     /note="mob mRNA (5' end putative) [5],[8]; putative"
+     misc_difference 1454
+                     /note="conflict; replace 44 in J. Mol. Biol. 124, 601-639
+                     (1978)"
+                     /citation=[2]
+                     /replace=""
+     misc_feature    complement(1465..1466)
+                     /note="relaxation (nic) cut site [2]"
+     CDS             complement(1500..1709)
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="7.6 kd ORF"
+                     /protein_id="AAB59129.1"
+                     /translation="MNRPIFVNRFTTTPMSFTAAASHVSGMTVKTSDTCSSRRRSQLV
+                     CERMPGADKPVRARQQVLAGVGAQP"
+     misc_difference 1581..1582
+                     /note="conflict; replace 171 in J. Mol. Biol. 124, 601-639
+                     (1978)"
+                     /citation=[2]
+                     /replace=""
+     CDS             1609..1746
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob1 protein (gtg start codon)"
+                     /protein_id="AAB59130.1"
+                     /translation="MSEVFTVIPETCEAAAVKLIGVVVKRFTNIGLFICVQFVELLQQ
+                     R"
+     CDS             complement(1612..1803)
+                     /codon_start=1
+                     /transl_table=11
+                     /product="RNA I inhibition modulator protein (rom; gtg
+                     start codon)"
+                     /protein_id="AAB59132.1"
+                     /translation="MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDH
+                     ADELYRSCLARFGDDGENL"
+     CDS             1843..2190
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob2 ORF"
+                     /protein_id="AAB59133.1"
+                     /translation="MIPMKRERMLTIRVTDDEHARLLERCEGKQLAVWMRRVCLGEPV
+                     ARSGKLPTLAPPLLRQLAAIGNNLNQTARKVNSGQWSSGDRVQVVAALMAIGDELRRL
+                     RLAVREQGARDDS"
+     CDS             2180..3733
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob3 ORF"
+                     /protein_id="AAB59134.1"
+                     /translation="MIVKFHARGKGGGSGPVDYLLGRERNREGATVLQGIPEEVRELI
+                     DATPFAKKYTSGVLSFAEKELPPGGREKVMASFERVLMPGLEKNQYSILWVEHQDKGR
+                     LELNFVIPNMELQTGKRLQPYYDRADRPRIDAWQTLLNHHYGLHDPNAPENRRTLTLP
+                     DNLPETKQALAEGVTRGIDALYHAGEIKGRQDVIQALTEAGLEVVRVTRSSISIADPN
+                     GGKNIRLKGAFYEQSFADGRGVREKAERESRIYRENAEQRVQEARRICKRGCDIKRDE
+                     NQRRYSPVHSLDRGIAGKTPGRGERGDDAAQEGRVKAGREYGHDVTGDSLSPVYREWR
+                     DALVSWREDTGEPGRNQEAGRDIAETEREDMGRGVCAGREQEIPCPSVREISGGDSLS
+                     GERVGTSEGVTQSDRAGNTFAERLRAAATGLYAAAERMGERLRGIAEDVFAYATGQRD
+                     AERAGHAVESAGATLERADRTLEPVIQRELEIREERLIQEREHVLSLERERQPEIQER
+                     TLDGPSLGW"
+     CDS             2214..2399
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob4 ORF"
+                     /protein_id="AAB59135.1"
+                     /translation="MAVVRLITCWGGSVTAKAQRCFRVYRKKSGNSSMPRHLRRNTRP
+                     VFCRSRRRSCRREDVKK"
+     CDS             2868..3386
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob6 ORF"
+                     /protein_id="AAB59136.1"
+                     /translation="MSNLLQTGAEFEKKLKERAESTEKMLNNEFRRLGESVSEAVTSN
+                     ETKIRDAIALFTASTEESLEKHREGVKEAMMQHRRDVLKLAGNTGMMLLGIVFLLFTA
+                     SGGTLWYLGGRIQANLEEIRKQEETLQKLNAKTWGVEFVQDGNRKFLVLPYGKSAEVI
+                     PFQGKEWVHLKE"
+     CDS             3393..3626
+                     /codon_start=1
+                     /transl_table=11
+                     /product="mob7 ORF"
+                     /protein_id="AAB59137.1"
+                     /translation="MTELETHLLNALEQLQQDYMQRLSEWESAFVELQKMFSLTQRDN
+                     AMLNERVMQLSQQVQHLSEQTERLSQLYSENWR"
+     CDS             3657..3818
+                     /codon_start=1
+                     /transl_except=(pos:3669..3671,aa:OTHER)
+                     /transl_table=11
+                     /product="mob8 ORF; Xxx"
+                     /protein_id="AAB59138.1"
+                     /translation="MCYPXNGSVSRKYRNARWMALRWDGETMKNGSFSGLSGGNVACT
+                     LWLHRYSYG"
+     CDS             3766..3936
+                     /codon_start=1
+                     /transl_except=(pos:3847..3849,aa:OTHER)
+                     /transl_table=11
+                     /product="mob9 ORF; Xxx"
+                     /protein_id="AAB59139.1"
+                     /translation="MGVMWPVPSGCIGIHTVKIYQARSRSFXGGLLPFLPVCCRDRAE
+                     RVLAVRTIKGLW"
+     mRNA            complement(<3943..4887)
+                     /note="exc mRNA [5],[8]"
+     CDS             complement(3943..4362)
+                     /codon_start=1
+                     /transl_table=11
+                     /product="entry exclusion protein 2 (exc2)"
+                     /protein_id="AAB59140.1"
+                     /translation="MRRTGNKLCLIAMITATVALTACTPKGSVEQHTRHYVYASDDGF
+                     DPNFSTQKADTTRMMVPFFRQFWDMGAKDKATGKSRSDVQQRIQQFHSQEFLNSLRGT
+                     TQFAGTDYRSKDLTPKKSRLLADTISAVYLDGYEGRQ"
+     CDS             4258..4647
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="14.5 kd ORF"
+                     /protein_id="AAB59141.1"
+                     /translation="MPGMLFHAALWGTGCESYCCCYHGDKTKFVSGTSHECLPTLKYL
+                     FSVSYYPKTILSSVSDSVQRPNNLDQNPRFFSSSSACLSWAISFCSCSRSASWRLRSI
+                     SCACLSSSISVRHCFSSFSSRRMRSVC"
+     CDS             complement(4443..4862)
+                     /codon_start=1
+                     /transl_table=11
+                     /product="entry exclusion protein 1 (exc1)"
+                     /protein_id="AAB59142.1"
+                     /translation="MAWHTLRDALKMTGRSRSQFYRDMRGGLVSYRTGRDGRREFETS
+                     ELIRAYGELKQNETPERHSEGHAENPHDQQTERILRELNELKQCLTLMLEDKQAQDMD
+                     RRRQEAEREQLQNEIAQLRQALELEKKRGFWSRLFGR"
+     misc_difference 4784..4787
+                     /note="conflict; replace 2..4.in Gene 15, 119-126 (1981)"
+                     /citation=[6]
+                     /replace=""
+     misc_binding    5063..5093
+                     /note="LexA binding site"
+                     /citation=[8]
+                     /bound_moiety="LexA"
+     CDS             5435..5653
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="8.8 kd ORF"
+                     /protein_id="AAB59143.1"
+                     /translation="MRLFVTMPHVRLQQQSLLMLIMQLCRRKQSVCALRKQKKKPVKK
+                     RKQQKRLFRKQNNDVKRLNGRRLKQNAS"
+     CDS             5852..6013
+                     /citation=[8]
+                     /codon_start=1
+                     /transl_table=11
+                     /product="6.7 kd ORF"
+                     /protein_id="AAB59144.1"
+                     /translation="MNWLRHPLNIKNWMSWSKNYHQEPMIRFRTVLFLKQPDDGLGPV
+                     RLEKKNKNR"
+ORIGIN      
+        1 ttctatgctc ctatattgat aagaataaac ttaatactat aaatgaggtg ttagggattt
+       61 aattattctt tattgatata aaaagtccta gcaatccaaa tgggattgct aggaccaaac
+      121 aaagtagatt atatagcata aataggttta attttgctac gggggcgtta tttaggtttt
+      181 ttcttctttc gaaaaaatct ttctttatga agttaaaagc tatgtattca atagcatatt
+      241 ttgaatatgg acatagaata gtgcttatca ctattgcata tagcatctta tctgacacaa
+      301 ggaaataata cccttcgctg ttttttgtta taaggtatat atatataagt gtgcagtaca
+      361 ggccaaataa aatatttttt atgtagtatc ttaagctcat aaattaaacc tcgccatata
+      421 ttcttttcat tttataagga tcgagttatg aggaaaagat tttttgtggg aatattcgcg
+      481 ataaacctcc ttgttggatg tcaggctaac tatatacctg atgttcaggg agggaccatc
+      541 gcaccatcct cctcttctaa actgacgggg atcgcggttc agtagaaaag attaaaggat
+      601 cttcttgaga tccttttttt ctgcgcgtaa tctgctgctt gcaaacaaaa aaaccaccgc
+      661 taccaacggt ggtttgtttg ccggatcaag agctaccaac tctttttccg aaggtaactg
+      721 gcttcagcag agcgcagata ccaaatactg tccttctagt gtagccgtag tcgggccact
+      781 acttcaagaa ctctgtagca ccgtttgtgc catcatcgct ctgctaatcc ggttaccagt
+      841 ggctgctgcc agtggcgtta aggcgtgcct taccgggttg gactcaagac gatagttacc
+      901 ggataaggcg cagcggtcgg gctgaacggg gggttcgtgc acacagccca gcttggagcg
+      961 aacgacctac accgaactga gataccaaca gcgtgagcta tgagaaagcg ccacgcttcc
+     1021 cgaagggaga aaggcggaca ggtatccggt aagcggcagg gtcggaacag gagagcgcac
+     1081 gagggagctt ccagggggaa acgcctggta gctttatagt cctgtcgggt ttcgccacct
+     1141 ctgacttgag cgtctatttt tgtgatgctc gtcagggggg cggagcctat ggaaaaacgc
+     1201 ctgctacgtg gccttcttcc tgttcctggt cttttgctca catgttcttt ccggccttat
+     1261 cccctgattc tgtggataac tgtgttaccg tttttgtgtg agtcagtacc gctcgccgca
+     1321 gtcgaacgac cgagcgtagc gagtcagtga gcgaggaagc ggaaaagcgc ctggacgtgc
+     1381 attttctcct tacgcatctg tgcggcattt cacacccggc atggcgtact tttcatacaa
+     1441 tccgcactga tgccgcatgg ttaagccagt atacactccg ctatcgctac gtgactgggt
+     1501 cagggctgcg ccccgacacc cgctaaaacc tgctgacgcg ccctgacggg cttgtcagct
+     1561 cccggcatcc gctcacagac aagctgtgac cgtctccggg agctgcatgt gtcagaggtt
+     1621 ttcaccgtca tccccgaaac gtgcgaggca gctgcggtaa agctcatcgg cgtggtcgtg
+     1681 aagcgattca caaatatcgg cctgttcatc tgcgtccagt tcgttgagct tctccagcag
+     1741 cgttaatgtc tggcttctga taaagcgggc catgttaagg gcggtttttt cctgtttagt
+     1801 cactgatgcc tccgtgtaag ggggatttct gttcatgggg taatgatacc gatgaaacgc
+     1861 gagaggatgc tcacaatacg ggttactgat gatgaacatg cccggttact tgaacgctgt
+     1921 gagggtaaac aactggcggt atggatgcgg cgggtctgcc tgggggagcc ggttgcccgt
+     1981 tccggaaaac tgccgacact ggcaccgccg ttactgcgtc agctggccgc catcggaaat
+     2041 aacctgaatc agacagcccg taaggtgaac agcgggcagt ggtcttccgg tgaccgggtt
+     2101 caggtggtgg ccgcactgat ggccatcggg gatgagctgc gccggctgcg tctggctgtc
+     2161 agggaacagg gggcgcggga tgatagttaa atttcatgcc aggggaaaag gtggtggcag
+     2221 tggtccggtt gattacctgc tggggaggga gcgtaaccgc gaaggcgcaa cggtgcttca
+     2281 gggtataccg gaagaagtcc gggaactcat cgatgccacg ccatttgcga agaaatacac
+     2341 gtccggtgtt ctgtcgttcg cggagaagga gctgccgccg ggaggacgtg aaaaagtgat
+     2401 ggcgagcttt gagcgtgtac tgatgcccgg tctcgaaaaa aatcagtaca gcatcctgtg
+     2461 ggtggagcac caggacaagg gacggcttga gctgaatttt gtcattccga acatggagct
+     2521 acagaccgga aaacgcctcc agccgtacta cgaccgcgca gacaggccta gaattgatgc
+     2581 ttggcagacg ctgttaaatc accattacgg gctgcatgac ccgaacgccc cggagaaccg
+     2641 caggacgctg acactccctg ataacctgcc tgaaacgaaa caggcgcttg ctgagggcgt
+     2701 cacgcgaggt atagatgcac tttaccatgc cggagagata aaaggccgtc aggatgtgat
+     2761 tcaggcgctc actgaggcgg ggctggaagt ggtcagggtg acgcgaagca gtatcagcat
+     2821 tgcagatccg aacggcggga agaatatcag gctgaaagga gcattttatg agcaatcttt
+     2881 tgcagacggg cgcggagttc gagaaaaagc tgaaagagag agccgaatct acagagaaaa
+     2941 tgctgaacaa cgagttcagg aggctcggcg aatctgtaag cgaggctgtg acatcaaacg
+     3001 agacgaaaat cagagacgct atagccctgt tcacagcctc gacagaggaa tcgctggaaa
+     3061 aacaccggga aggggtgaaa gaggcgatga tgcagcacag gagggacgtg ttaaagctgg
+     3121 cagggaatac gggcatgatg ttactgggga tagtctttct cctgtttacc gcgagtggcg
+     3181 ggacgctctg gtatcttgga gggaggatac aggcgaacct ggaagaaatc aggaagcagg
+     3241 aagagacatt gcagaaactg aacgcgaaga catggggcgt ggagtttgtg caggacggga
+     3301 acaggaaatt ccttgtcctt ccgtacggga aatcagcgga ggtgattccc tttcagggga
+     3361 aagagtgggt acatctgaag gagtgacaca gagtgacaga gctggaaaca catttgctga
+     3421 acgccttaga gcagctgcaa caggactata tgcagcggct gagcgaatgg gagagcgcct
+     3481 tcgtggaatt gcagaagatg ttttcgctta cgcaacggga caacgcgatg ctgaacgagc
+     3541 gggtcatgca gttgagtcag caggtgcaac acttgagcga gcagacagaa cgcttgagcc
+     3601 agttatacag cgagaactgg agataagaga ggaacggctg atacaggagc gcgaacatgt
+     3661 gttatcccta gaacgggagc gtcagccgga aatacaggaa cgcacgctgg atggcccttc
+     3721 gctgggatgg tgaaaccatg aaaaatggca gcttcagtgg attaagtggg ggtaatgtgg
+     3781 cctgtaccct ctggttgcat aggtattcat acggttaaaa tttatcaggc gcgatcgcgc
+     3841 agtttttagg gtggtttgtt gccattttta cctgtctgct gccgtgatcg cgctgaacgc
+     3901 gttttagcgg tgcgtacaat taagggatta tggtaaatcc acttactgtc tgccctcgta
+     3961 gccatcgaga taaaccgcag aaatcgtgtc agccagcagc ctggattttt tcggggtaag
+     4021 gtctttgctg cggtaatcag tacccgcaaa ttgagttgtg ccccggagtg agtttaaaaa
+     4081 ttcttggctg tgaaactgct gaatgcgttg ttgcacatca ctccgtgatt ttcctgtcgc
+     4141 tttgtcttta gctcccatat cccagaactg ccgaaaaaaa ggcaccatca ttcgtgttgt
+     4201 gtcggctttt tgggtggaaa agttgggatc aaaaccgtca tcagaagcat atacgtaatg
+     4261 ccgggtatgt tgttccacgc tgccctttgg ggtacaggct gtgagagcta ctgttgctgt
+     4321 tatcatggcg ataagacaaa gtttgtttcc ggtacgtctc atgagtgtct ccctacctta
+     4381 aagtatttat tctcggtgag ttattatccg aagactattt tatcatcagt ctctgacagc
+     4441 gttcagcgac cgaacaacct ggaccagaat ccccgtttct tttccagttc cagtgcctgc
+     4501 ctgagctggg ctatctcatt ttgtagctgt tcccgttctg cttcctggcg tctgcgatcc
+     4561 atatcctgtg cctgtttatc ctcaagcatc agcgtcaggc attgtttcag ctcattcagt
+     4621 tcccggagaa tgcgttctgt ctgctgatca tgtggatttt ctgcatgtcc ctcactgtgc
+     4681 ctttctggtg tctcattctg ctttaattcg ccgtatgccc ggatcagttc actggtttca
+     4741 aactcccgtc gtccgtccct gccggtacgg taactgacaa ggcctccgcg catatcacgg
+     4801 taaaactgtg aacgcgatct gcctgtcatt tttagtgcgt cccggagtgt gtgccatgcc
+     4861 ataaagtgac agtgtcccat agatgtctca tctcatagtt tcagtaaaac ataatgaggt
+     4921 ctgagaacgg taatgtttgt gctggttttt gtggcatcgg gcgagaatag cgcgtggtgt
+     4981 gaaagactgt ttttttgatc gttttcacaa aaatggaagt ccacagtctt gacagggaaa
+     5041 atgcagcggc gtagctttta tgctgtatat aaaaccagtg gttatatgta cagtatttat
+     5101 ttttaactta ttgttttaaa agtcaaagag gattttataa tggaaaccgc ggtagcgtac
+     5161 tataaagatg gtgttcctta tgatgataag ggacaggtaa ttattactct tttgaatggt
+     5221 actcctgacg ggagtggctc tggcggcgga ggtggaaaag gaggcagtaa aagtgaaagt
+     5281 tctgcagcta ttcatgcaac tgctaaatgg tctactgctc aattaaagaa aacacaggca
+     5341 gagcaggctg cccgggcaaa agctgcagcg gaagcacagg cgaaagcaaa ggcaaacagg
+     5401 gatgcgctga ctcagcgcct gaaggatatc gtgaatgagg ctcttcgtca caatgcctca
+     5461 cgtacgcctt cagcaacaga gcttgctcat gctaataatg cagctatgca ggcggaagca
+     5521 gagcgtttgc gccttgcgaa agcagaagaa aaagcccgta aagaagcgga agcagcagaa
+     5581 aaggcttttc aggaagcaga acaacgacgt aaagagattg aacgggagaa ggctgaaaca
+     5641 gaacgccagt tgaaactggc tgaagctgaa gagaaacgac tggctgcatt gagtgaagaa
+     5701 gctaaagctg ttgagatcgc ccaaaaaaaa ctttctgctg cacaatctga agtggtgaaa
+     5761 atggatggag agattaagac tctcaattct cgtttaagct ccagtatcca tgcccgtgat
+     5821 gcagaaatga aaacgctcgc tggaaaacga aatgaactgg ctcaggcatc cgctaaatat
+     5881 aaagaactgg atgagctggt caaaaaacta tcaccaagag ccaatgatcc gcttcagaac
+     5941 cgtccttttt ttgaagcaac cagacgacgg gttggggccg gtaagattag agaagaaaaa
+     6001 caaaaacagg taacagcatc agaaacacgt attaaccgga taaatgctga tataactcag
+     6061 atccagaagg ctatttctca ggtcagtaat aatcgtaatg ccggtatcgc tcgtgttcat
+     6121 gaagctgaag aaaatttgaa aaaagcacag aataatctcc ttaattcaca gattaaggat
+     6181 gctgttgatg caacagttag cttttatcaa acgctgactg aaaaatatgg tgaaaaatat
+     6241 tcgaaaatgg cacaggaact tgctgataag tctaaaggta agaaaatcgg caatgtgaat
+     6301 gaagctctcg ctgcttttga aaaatacaag gatgttttaa ataagaaatt cagcaaagcc
+     6361 gatcgtgatg ctatttttaa tgcgttggca tcggtgaagt atgatgactg ggctaaacat
+     6421 ttagatcagt ttgccaagta cttgaagatt acggggcatg tttcttttgg atatgatgtg
+     6481 gtatctgata tcctaaaaat taaggataca ggtgactgga agccactatt tcttacatta
+     6541 gagaagaaag ctgcagatgc aggggtgagt tatgttgttg ctttactttt tagcttgctt
+     6601 gctggaacta cattaggtat ttggggtatt gctattgtta caggaa
+//
