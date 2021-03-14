@@ -1,80 +1,61 @@
-<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/aframevr    /aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'>   </script>
-<!-- include ar.js for A-Frame -->
-<body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs>
-    <!-- create your content here. just a box for now -->
-    <a-box position='0 1.0 0' material='opacity: 0;'></a-box>
-    <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='custom' type='pattern' url='assets/pattern-download.patt'></a-marker-camera>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
     <script>
-    window.onload = function() {
-    AFRAME.registerComponent('videohandler', {
-        init: function () {
-            var marker = this.el;
-
-            this.vid = document.querySelector("#vid");
-
-            marker.addEventListener('markerFound', function () {
-                this.vid.play();
-            }.bind(this));
-
-    marker.addEventListener('markerLost', function() {
-        this.vid.pause();
-        this.vid.currentTime = 0;
-    }.bind(this));
+AFRAME.registerComponent("vidhandler", {
+    // ...
+    init: function () {
+      // Set up initial state and variables.
+      this.toggle = false;
+      this.vid = document.querySelector("#vid");
+      this.vid.pause();
+    },
+    tick: function () {
+      if (this.el.object3D.visible == true) {
+        if (!this.toggle) {
+          this.toggle = true;
+          this.vid.play();
         }
-    });
-};
-</script>
+      } else {
+        this.toggle = false;
+        this.vid.pause();
+      }
+    }
+  });</script>
 
-<style>
-.arjs-loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
-}
-</style>
-
-<body style='margin : 0px; overflow: hidden;'>
-<div class="arjs-loader">
-    <div>Loading, please wait...</div>
-</div>
-<a-scene
-    vr-mode-ui="enabled: false;"
-    renderer='antialias: true; alpha: true; precision: mediump;'
-    embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+    <a-scene vr-mode-ui="enabled: false" artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 90;' arjs='debugUIEnabled: false;detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
     <a-assets>
-        <video src="https://www.youtube.com/watch?v=Z-iy5W0lC04"
-            preload="auto" id="vid" response-type="arraybuffer" loop
-            autoplay autofocus playsinline>
+        <video muted id="vid" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
+            <source src="assets/videoplayback.mp4" type="video/mp4">
         </video>
     </a-assets>
 
-    <a-nft
-        videohandler
-        type='nft'
+     <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='custom' type='pattern' url='assets/pattern-download.patt'></a-marker-camera>
+        <a-entity position="0 0 0">
+            <a-video width="4" height="3" rotation="-90 0 0" material='transparent:true;shader:flat;side:double;src:#vid'></a-video>
+        </a-entity>
+    </a-marker>
 
-    >
-        <a-video src="#vid" position="10 -10 -175" rotation="-90 0 0" width='140'     height='140'>
-        </a-video>
-    </a-nft>
-    <a-entity camera></a-entity>
+    <a-entity camera>
+        <a-entity cursor="rayOrigin: mouse;fuse: false;"></a-entity>
+    </a-entity>
 
-  </a-scene>
-</body>
+</a-scene>
+
+  </body>
+</html>
