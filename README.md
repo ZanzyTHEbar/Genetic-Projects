@@ -1,30 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/gh/aframevr    /aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-
-    <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'>   </script>
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aframevr    /aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'>   </script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- create your content here. just a box for now -->
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='custom' type='pattern' url='assets/ppattern-download.patt'></a-marker-camera>
     <script>
-        window.onload = function() {
-        AFRAME.registerComponent('videohandler', {
-            init: function () {
-                var marker = this.el;
+    window.onload = function() {
+    AFRAME.registerComponent('videohandler', {
+        init: function () {
+            var marker = this.el;
 
-                this.vid = document.querySelector("#vid");
+            this.vid = document.querySelector("#vid");
 
-                marker.addEventListener('markerFound', function () {
-                    this.vid.play();
-                }.bind(this));
+            marker.addEventListener('markerFound', function () {
+                this.vid.play();
+            }.bind(this));
 
-        marker.addEventListener('markerLost', function() {
-            this.vid.pause();
-            this.vid.currentTime = 0;
-        }.bind(this));
-            }
-        });
-    };
-    </script>
-  </head>
+    marker.addEventListener('markerLost', function() {
+        this.vid.pause();
+        this.vid.currentTime = 0;
+    }.bind(this));
+        }
+    });
+};
+</script>
+
 <style>
 .arjs-loader {
     height: 100%;
@@ -56,7 +61,7 @@
     embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
     <a-assets>
-        <video src="https://www.youtube.com/watch?v=Z-iy5W0lC04"
+        <video src="assets/urobologio.mp4"
             preload="auto" id="vid" response-type="arraybuffer" loop
             autoplay autofocus playsinline>
         </video>
@@ -64,13 +69,13 @@
 
     <a-nft
         videohandler
-        type='nft' url='https://prometheontechnologies.com/wp-content/uploads/2020/06/Prometheon-Technologies-3-1.png'
+        type='nft' url='nft/urobologio/urobologio-image/urobologio'
 
     >
         <a-video src="#vid" position="10 -10 -175" rotation="-90 0 0" width='140'     height='140'>
         </a-video>
     </a-nft>
     <a-entity camera></a-entity>
-</a-scene>
+
+  </a-scene>
 </body>
-</html>
