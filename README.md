@@ -37,7 +37,7 @@
 
     <a-assets>
         <video muted id="vid" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-            <source src="assets/videoplayback.mp4" type="video/mp4">
+            <source src="https://www.youtube.com/watch?v=Z-iy5W0lC04" type="video/mp4">
         </video>
     </a-assets>
 
