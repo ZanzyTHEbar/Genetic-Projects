@@ -9,9 +9,6 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.1/aframe/build/aframe-ar.js"></script>
     <script type="text/javascript" src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-
     <!-- import the webpage's javascript file -->
     <script>
     AFRAME.registerComponent("vidhandler", {
