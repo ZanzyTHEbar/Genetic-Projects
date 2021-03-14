@@ -5,9 +5,9 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <a-box position='0 1.0 0' material='opacity: 0;'></a-box>
     <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='custom' type='pattern' url='assets/ppattern-download.patt'></a-marker-camera>
+    <a-marker-camera preset='custom' type='pattern' url='assets/pattern-download.patt'></a-marker-camera>
     <script>
     window.onload = function() {
     AFRAME.registerComponent('videohandler', {
@@ -60,7 +60,7 @@
     embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
     <a-assets>
-        <video src="assets/urobologio.mp4"
+        <video src="https://www.youtube.com/watch?v=Z-iy5W0lC04"
             preload="auto" id="vid" response-type="arraybuffer" loop
             autoplay autofocus playsinline>
         </video>
@@ -68,7 +68,7 @@
 
     <a-nft
         videohandler
-        type='nft' url='nft/urobologio/urobologio-image/urobologio'
+        type='nft'
 
     >
         <a-video src="#vid" position="10 -10 -175" rotation="-90 0 0" width='140'     height='140'>
