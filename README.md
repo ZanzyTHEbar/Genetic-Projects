@@ -64,7 +64,7 @@
 
     <a-nft
         videohandler
-        type='nft' url='nft/urobologio/urobologio-image/urobologio'
+        type='nft' url='https://prometheontechnologies.com/wp-content/uploads/2020/06/Prometheon-Technologies-3-1.png'
 
     >
         <a-video src="#vid" position="10 -10 -175" rotation="-90 0 0" width='140'     height='140'>
