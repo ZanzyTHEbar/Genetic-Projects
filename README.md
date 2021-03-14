@@ -14,7 +14,7 @@
 
     <!-- import the webpage's javascript file -->
     <script>
-AFRAME.registerComponent("vidhandler", {
+    AFRAME.registerComponent("vidhandler", {
     // ...
     init: function () {
       // Set up initial state and variables.
