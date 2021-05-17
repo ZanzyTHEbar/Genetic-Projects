@@ -1,4 +1,4 @@
-"These plasmids are released as creative commons attribution-share alike. You may download them, modify them, even have them synthesized if you so choose or use them for commercial activity. But you must provide attribution to The Thought Emporium and Justin Atkin, and any derivatives you make must be released under the same license. See the link below for details.
+"These plasmids are released as creative commons attribution-share alike. You may download them, modify them, even have them synthesized if you so choose or use them for commercial activity.
 https://creativecommons.org/licenses/by-sa/4.0/ 
 
 Link to channel: https://youtube.com/c/thethoughtemporium
