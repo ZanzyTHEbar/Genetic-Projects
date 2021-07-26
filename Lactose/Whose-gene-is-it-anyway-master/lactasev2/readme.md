@@ -1,4 +1,4 @@
-This is the new version of the lactase gene therapy plasmid. I've also included the old version for reference.
+This is the new version of the lactase gene therapy plasmid. I've also included the old version and videos to the original authors VLOGS for reference.
 
 **DO NOT TEST THIS ON YOURSELF FFS.**
 
