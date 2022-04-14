@@ -5,26 +5,59 @@
   viewBox="0 0 1225.5 792.5"
 >
   <foreignObject width="100%" height="100%">
-		<body xmlns="http://www.w3.org/1999/xhtml">
+		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
         $color1: #55c1ff;
         $color2: #dc6bad;
 
         $background: #0c0c0c;
 
-        body{
-          background: $background;
-          display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					margin: 0;
-					width: 100%;
-					height: 400px;
-					background-size: 600% 400%;
-					border-radius: 10px;
-					color: white;
-					text-align: center;
+        @keyframes beforeAnimate{
+          0%{
+            top: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.25;
+          }
+          25%{
+            transform: translateX(0);
+          }
+          50%{
+            top: 100%;
+            transform: translateX(-50%) translateY(-100%) scale(0.5);
+            opacity: 0.75;
+          }
+          75%{
+            transform: translateX(50%);
+          }
+          100%{
+            top: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.75;
+          }
+        }
+
+        .body{
+          font-family:
+              system-ui,
+              -apple-system,
+              'Segoe UI',
+              Roboto,
+              Helvetica,
+              Arial,
+              sans-serif,
+              'Apple Color Emoji',
+              'Segoe UI Emoji';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+            height: 400px;
+            background-size: 600% 400%;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
         }
 
         .container{
@@ -51,54 +84,29 @@
           display: flex;
           justify-content: space-evenly;
           align-items: center;
-
-          .spike{
-            border: 1px solid white;
-            height: 80%;
-            width: 0;
-            position: relative;
-            &::before,&::after{
-              content: "";
-              position: absolute;
-              height: 1rem;
-              width: 1rem;
-              left: 0;
-              right: 0;
-              border: 1px solid white;
-              transform: translateX(-50%);
-              border-radius: 500px;
-              margin: auto;
-            }
-            &::before{
-              top: 0;
-              background-color: $color1;
-            }
-            &::after{
-              bottom: 0;
-              background-color: $color2;
-            }
-          }
         }
 			</style>
-      <div class="container">
-        <div class="dnaloader">
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-        </div>
+      <div class="body">
+			  <div class="container">
+          <div class="dnaloader">
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+          </div>
+			  </div>
       </div>
-		</body>
+		</div>
 	</foreignObject>
 </svg>
