@@ -92,7 +92,7 @@
           position: relative;
         }
 
-        .spike::before,.spike::after{
+        .dnaloader::before,.dnaloader::after{
           content: "";
           position: absolute;
           height: 1rem;
