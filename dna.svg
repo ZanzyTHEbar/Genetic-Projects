@@ -11,129 +11,14 @@
   <foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-        .drop {
+        $color1: #55c1ff;
+        $color2: #dc6bad;
+
+        $background: #0c0c0c;
+
+        .body{
+          background: $background;
           display: flex;
-          position: relative;
-          width: 20px;
-          height: 20px;
-          top: -30px;
-          margin: 0 auto;
-          background: #FFF;
-          -moz-border-radius: 20px;
-          -webkit-border-radius: 20px;
-          border-radius: 20px;
-          -moz-animation-name: drip;
-          -webkit-animation-name: drip;
-          animation-name: drip;
-          -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
-          -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
-          animation-timing-function: cubic-bezier(1,0,.91,.19);
-          -moz-animation-duration: 2s;
-          -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-          -moz-animation-iteration-count: infinite;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-
-        .drop:before {
-          display: flex;
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 0;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-bottom: 30px solid rgba(255,255,255,1);
-          top: -22px;
-        }
-
-        .wave {
-          display: flex;
-          position: relative;
-          opacity: 0;
-          top: 0;
-          width: 2px;
-          height: 1px;
-          border: #FFF 7px solid;
-          -moz-border-radius: 300px / 150px;
-          -webkit-border-radius: 300px / 150px;
-          border-radius: 300px / 150px;
-          -moz-animation-name: ripple;
-          -webkit-animation-name: ripple;
-          animation-name: ripple;
-          -moz-animation-delay: 2s;
-          -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-          -moz-animation-duration: 2s;
-          -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-          -moz-animation-iteration-count: infinite;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-
-        .wave:after {
-          display: flex;
-          content: "";
-          position: absolute;
-          opacity: 0;
-          top: -5px;
-          left: -5px;
-          width: 2px;
-          height: 1px;
-          border: #FFF 5px solid;
-          -moz-border-radius: 300px / 150px;
-          -webkit-border-radius: 300px / 150px;
-          border-radius: 300px / 150px;
-          -moz-animation-name: ripple-2;
-          -webkit-animation-name: ripple-2;
-          animation-name: ripple-2;
-          -moz-animation-duration: 2s;
-          -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-          -moz-animation-iteration-count: infinite;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-
-        @keyframes ripple {
-            from {
-              opacity: 1;
-            }
-            to {
-              width: 600px;
-              height: 300px;
-              border-width: 1px;
-              top: -100px;
-              opacity: 0;
-            }
-        }
-
-        @keyframes ripple-2 {
-            0% {
-              opacity: 1;
-            }
-            50% {
-              opacity: 0;
-            }
-            100% {
-              width: 200px;
-              height: 100px;
-              border-width: 1px;
-              top: 100px;
-              left: 200px;
-            }
-        }
-
-        @keyframes drip {
-            to {
-              top: 190px;
-            }
-        }
-
-				.container {
-					display: flex;
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
@@ -144,91 +29,82 @@
 					border-radius: 10px;
 					color: white;
 					text-align: center;
-          background-color: #3498DB;
-				}
-
-        path {
-          opacity: 0;
-          animation: 5.5s opacity infinite;
         }
 
-        svg {
-          color: white;
-          animation: 5.5s color infinite;
+        .container{
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        @keyframes opacity {
-          15% {opacity: 0} 
-          35% {opacity: 1}
-          65% {opacity: 1} 
-          85% {opacity: 0}
+        .dnaloader{
+          height: 10rem;
+          width: 30rem;
+          border: 1px solid white;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          .spike{
+            border: 1px solid white;
+            height: 80%;
+            width: 0;
+            position: relative;
+            &::before,&::after{
+              content: "";
+              position: absolute;
+              height: 1rem;
+              width: 1rem;
+              left: 0;
+              right: 0;
+              border: 1px solid white;
+              transform: translateX(-50%);
+              border-radius: 500px;
+              margin: auto;
+            }
+            &::before{
+              top: 0;
+              background-color: $color1;
+            }
+            &::after{
+              bottom: 0;
+              background-color: $color2;
+            }
+          }
         }
-
-        @keyframes color {
-          15% {color: white} 
-          35% {color: black}
-          65% {color: black} 
-          85% {color: white}
-        }
-
-        #hg3 {animation-delay: 1.0s}
-        #hg5 {animation-delay: 2.5s}
-        #hg2 {animation-delay: 0.5s}
-        #hg6 {animation-delay: 0.5s}
-        #hg5 {animation-delay: 2.0s}
-        #hg4 {animation-delay: 1.5s}
-
 			</style>
-			<div class="container">
-        <div class="drop" />
-          <svg
-          fill="currentColor"
-          version="1.1"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="-0 -35 1270 670"
-          xml:space="preserve"
-        >
-            <path
-            id="hg1"
-            fill="currentColor"
-            d="M238.6,174.7v111.3H66V174.7H0v285.6h66.5V342.5H239v117.8h66.4V174.7H238.6z"
-          />
-            <path
-            id="hg2"
-            fill="currentColor"
-            d="M353,460.3h198.4c61.2,0,99.1-29.9,99.1-80.3c0.1-15.1-4.6-29.8-13.4-42c-8.8-12.2-21.3-21.3-35.6-26
-              c12-4.9,22.3-13.2,29.6-24c7.2-10.8,11.1-23.5,11-36.5c0-49.6-35.3-76.7-97.7-76.7H353V460.3z M416.7,289.3v-60h120.9
-              c26.6,0,41.8,9.9,41.8,29.8c0,19.8-15.2,30.2-41.8,30.2H416.7z M416.7,341h129.2c25.5,0,40.5,13.1,40.5,32.2
-              c0,19.1-15.1,32.2-40.5,32.2H416.7V341z"
-          />
-            <path
-            id="hg3"
-            fill="currentColor"
-            d="M1274.7,231.6v-56.8H960.3v56.8h124.1v228.7h66.4V231.6H1274.7z"
-          />
-            <path
-            id="hg4"
-            fill="currentColor"
-            d="M881.6,174.7h-75.1L663.7,460.2h70.8l30.2-61.2l27.2-54.9h-0.1l19.4-39V305l32.3-65l40.7,82.8l10.5,21.3l56.9,116.1h71.9
-              L881.6,174.7z"
-          />
-            <path
-            id="hg5"
-            fill="currentColor"
-            d="M844.2,576c16,0,28.9-13,28.9-28.9c0-16-13-28.9-28.9-28.9c-16,0-28.9,13-28.9,28.9C815.2,563.1,828.2,576,844.2,576z"
-          />
-            <path
-            id="hg6"
-            fill="currentColor"
-            d="M844.2,57.9c16,0,28.9-13,28.9-28.9S860.1,0,844.2,0c-16,0-28.9,13-28.9,28.9S828.2,57.9,844.2,57.9z"
-          />
-          </svg>
-        <div class="wave" />
-			</div>
+      <div class="body">
+			  <div class="container">
+          <div class="dnaloader">
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+            <div class="spike"></div>
+          </div>
+			  </div>
+      </div>
 		</div>
 	</foreignObject>
 </svg>
