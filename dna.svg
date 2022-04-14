@@ -22,12 +22,12 @@
           height: 400px;
           background-size: 600% 400%;
           border-radius: 10px;
-          color: white;
           text-align: center;
           background-color: $background;
         }
 
         .container{
+          position: fixed;
           top: 0;
           bottom: 0;
           left: 0;
