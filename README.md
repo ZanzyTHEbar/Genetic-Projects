@@ -41,7 +41,7 @@
 </p>
 <br>
 
-:star: ZanzyTHEbar / DaOfficialWizard#2377 (Discord) <p><img src="https://github.com/ZanzyTHEbar/Genetic-Projects/blob/main/imgs/wizard.svg" width="150" height="80" alt="Wizard Emoji"></p>
+:star: ZanzyTHEbar / DaOfficialWizard#2377 (Discord) <p><img src="https://github.com/ZanzyTHEbar/Genetic-Projects/blob/master/imgs/wizard.svg" width="150" height="80" alt="Wizard Emoji"></p>
 
 <br>
 
