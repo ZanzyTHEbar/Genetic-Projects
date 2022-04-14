@@ -28,12 +28,6 @@
 
 <!-- END OF PROFILE STACK, DO NOT REMOVE - Credit to user @basti564 for the design inspirations -->
 
-## :orange_book: Top Languages
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZanzyTHEbar&theme=tokyonight&layout=compact&langs_count=8?theme=tokyonight)](https://github.com/ZanzyTHEbar)
-
-[![HBAT's Github Stats](https://github-readme-stats.vercel.app/api?username=ZanzyTHEbar&show_icons=true&theme=radical)](https://github.com/ZanzyTHEbar)
-
 </div>
 <h2>Would you like to contact us?</h2>
 <p>Hey! <b><i>Think we share any common interests?</i></b> Let's hop on discord (below) and talk about things!</p>
