@@ -10,7 +10,7 @@
         $color1: #55c1ff;
         $color2: #dc6bad;
         $background: #0c0c0c;
-        $white: #fffff;
+        $white: #ffffff;
 
         @keyframes beforeAnimate{
           0%{
