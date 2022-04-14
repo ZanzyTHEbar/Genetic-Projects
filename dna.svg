@@ -9,7 +9,6 @@
 			<style>
         $color1: #55c1ff;
         $color2: #dc6bad;
-
         $background: #0c0c0c;
 
         @keyframes beforeAnimate{
