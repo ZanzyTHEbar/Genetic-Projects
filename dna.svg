@@ -92,7 +92,7 @@
           position: relative;
         }
 
-        .dnaloader::before,.dnaloader::after{
+        .spike::before,.spike::after{
           content: "";
           position: absolute;
           height: 1rem;
@@ -104,13 +104,13 @@
           margin: auto;
         }
 
-        .spike::before{
+        .dnaloader::before{
           top: 0;
           background-color: $color1;
           animation: beforeAnimate 1.5s linear infinite;
         }
 
-        .spike::after{
+        .dnaloader::after{
           bottom: 0;
           background-color: $color2;
         }
