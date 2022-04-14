@@ -12,30 +12,6 @@
         $background: #0c0c0c;
         $white: #ffffff;
 
-        @keyframes beforeAnimate{
-          0%{
-            top: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.25;
-          }
-          25%{
-            transform: translateX(0);
-          }
-          50%{
-            top: 100%;
-            transform: translateX(-50%) translateY(-100%) scale(0.5);
-            opacity: 0.75;
-          }
-          75%{
-            transform: translateX(50%);
-          }
-          100%{
-            top: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.75;
-          }
-        }
-
         .body{
           display: flex;
           flex-direction: column;
@@ -46,7 +22,7 @@
           height: 400px;
           background-size: 600% 400%;
           border-radius: 10px;
-          color: $white;
+          color: white;
           text-align: center;
           background-color: $background;
         }
@@ -116,6 +92,73 @@
         .dnaloader::after{
           bottom: 0;
           background-color: $color2;
+          animation: afterAnimate 1.5s linear infinite;
+        }
+
+
+        @for $i from 1 through 15 {
+          .spike:nth-child(#{$i}){
+            .spike::before, .spike::after{
+              animation-delay: #{$i*0.15}s;
+            }
+          }
+        }
+
+
+        @keyframes beforeAnimate{
+          0%{
+            top: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.25;
+          }
+          25%{
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.5;
+            z-index: -1;
+          }
+          50%{
+            top: 100%;
+            transform: translateX(-50%) translateY(-100%) scale(0.5);
+            opacity: 0.75;
+          }
+          75%{
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.5;
+            z-index: -1;
+          }
+          100%{
+            top: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.75;
+          }
+        }
+
+        @keyframes afterAnimate{
+          0%{
+            bottom: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.25;
+          }
+          25%{
+            transform: translateX(-50%) translateY(-100%) scale(0.5);
+            opacity: 1;
+            z-index: 1;
+          }
+          50%{
+            bottom: 100%;
+            transform: translateX(-50%) translateY(100%) scale(0.5);
+            opacity: 0.75;
+          }
+          75%{
+            transform: translateX(-50%) translateY(-100%) scale(0.5);
+            opacity: 0.50;
+            z-index: -1;
+          }
+          100%{
+            bottom: 0;
+            transform: translateX(-50%) translateY(0) scale(0.5);
+            opacity: 0.75;
+          }
         }
 			</style>
       <div class="body">
