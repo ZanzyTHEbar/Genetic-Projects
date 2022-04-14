@@ -42,7 +42,6 @@
         .dnaloader{
           height: 10rem;
           width: 30rem;
-          border: 1px solid $white;
           top: 0;
           bottom: 0;
           left: 0;
@@ -51,6 +50,7 @@
           display: flex;
           justify-content: space-evenly;
           align-items: center;
+          animation: rotateDna 15s linear infinite;
         }
 
         .spike{
@@ -103,7 +103,6 @@
             }
           }
         }
-
 
         @keyframes beforeAnimate{
           0%{
@@ -158,6 +157,15 @@
             bottom: 0;
             transform: translateX(-50%) translateY(0) scale(0.5);
             opacity: 0.75;
+          }
+        }
+
+        @keyframes rotateDna{
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(360deg);
           }
         }
 			</style>
