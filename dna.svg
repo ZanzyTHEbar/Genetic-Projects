@@ -10,6 +10,7 @@
         $color1: #55c1ff;
         $color2: #dc6bad;
         $background: #0c0c0c;
+        $white: #fffff;
 
         @keyframes beforeAnimate{
           0%{
@@ -65,7 +66,7 @@
         .dnaloader{
           height: 10rem;
           width: 30rem;
-          border: 1px solid white;
+          border: 1px solid $white;
           top: 0;
           bottom: 0;
           left: 0;
