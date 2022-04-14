@@ -46,7 +46,7 @@
           height: 400px;
           background-size: 600% 400%;
           border-radius: 10px;
-          color: white;
+          color: $white;
           text-align: center;
           background-color: $background;
         }
