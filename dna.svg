@@ -165,22 +165,22 @@
         }
       </style>
       <div class="container">
-        <div class="dnaloader">
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-          <div class="spike"></div>
-        </div>
+      <div class="dnaloader">
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      <div class="spike"></div>
+      </div>
       </div>
     </div>
 	</foreignObject>
