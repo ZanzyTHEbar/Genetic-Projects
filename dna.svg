@@ -83,7 +83,19 @@
           position: relative;
         }
 
-        .spike::before,.spike::after{
+        .spike::before{
+          content: "";
+          position: absolute;
+          height: 1rem;
+          width: 1rem;
+          left: 0;
+          right: 0;
+          transform: translateX(-50%);
+          border-radius: 500px;
+          margin: auto;
+        }
+
+        .spike::after{
           content: "";
           position: absolute;
           height: 1rem;
