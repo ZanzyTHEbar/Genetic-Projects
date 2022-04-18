@@ -8,179 +8,314 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        $color1: #55c1ff;
-        $color2: #dc6bad;
-        $background: #0c0c0c;
-        $white: #ffffff;
+        html {
+          background: #111;
+          overflow: hidden;
+          height: 100%;
+        }
 
-        .container{
-          position: fixed;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
+        body {
+          min-height: 100%;
+          display: grid;
+          place-items: center;
+          font-size: 3vmin;
+        }
+
+        .helix {
+          transform: rotateZ(45deg);
+        }
+
+        .strand {
           display: flex;
-          justify-content: center;
           align-items: center;
-          flex-direction: column;
-          margin: 0;
+          gap: 0.5em;
+          margin: 0.35em auto;
+
+          --d: calc(var(--i) / var(--total));
+          --color: hsl(calc(-0.05turn + (var(--d) * 0.85turn)), 95%, 75%);
+          --duration: 1.5s;
+          --delay: calc((var(--duration) * -1) + 0.1s * var(--i));
+          animation: var(--duration) cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation-delay: var(--delay);
+        }
+
+        .left,
+        .right {
+          animation: inherit;
+          display: grid;
+          grid-template-areas: "layer";
+          align-items: center;
+          width: 7em;
+          > * {
+            grid-area: layer;
+          }
+        }
+
+        .left {
+          transform: translateZ(0px);
+        }
+
+        .right {
+          transform: scaleX(-1);
+        }
+
+        .dot {
+          animation: inherit;
+          animation-duration: calc(var(--duration) * 2);
           width: 100%;
-          height: 400px;
-          background-size: 600% 400%;
-          border-radius: 10px;
-          color: white;
-          text-align: center;
-          background-color: $background;
-        }
 
-        .dnaloader{
-          height: 10rem;
-          width: 30rem;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          animation: rotateDna 15s linear infinite;
-        }
+          animation-name: move-dot;
+          @keyframes move-dot {
+            50% {
+              transform: translateX(200%);
+            }
+          }
 
-        .spike{
-          height: 80%;
-          width: 0;
-          position: relative;
-        }
+          --scale-start: 0.5;
+          --scale-end: 1;
+          .right & {
+            --scale-start: 1;
+            --scale-end: 0.5;
+          }
 
-        .spike::before{
-          content: "";
-          position: absolute;
-          height: 1rem;
-          width: 1rem;
-          left: 0;
-          right: 0;
-          transform: translateX(-50%);
-          border-radius: 500px;
-          margin: auto;
-        }
-
-        .spike::after{
-          content: "";
-          position: absolute;
-          height: 1rem;
-          width: 1rem;
-          left: 0;
-          right: 0;
-          transform: translateX(-50%);
-          border-radius: 500px;
-          margin: auto;
-        }
-
-        .dnaloader::before{
-          top: 0;
-          background-color: $color1;
-          animation: beforeAnimate 1.5s linear infinite;
-        }
-
-        .dnaloader::after{
-          bottom: 0;
-          background-color: $color2;
-          animation: afterAnimate 1.5s linear infinite;
-        }
-
-
-        @for $i from 1 through 15 {
-          .spike:nth-child(#{$i}){
-            .spike::before, .spike::after{
-              animation-delay: #{$i*0.15}s;
+          &::before {
+            display: block;
+            content: "";
+            border-radius: 50%;
+            width: 1em;
+            height: 1em;
+            background: var(--color);
+            animation: inherit;
+            animation-name: scale-dot;
+            @keyframes scale-dot {
+              33% {
+                transform: scale(var(--scale-start));
+              }
+              66% {
+                transform: scale(var(--scale-end));
+              }
             }
           }
         }
 
-        @keyframes beforeAnimate{
-          0%{
-            top: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.25;
-          }
-          25%{
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.5;
-            z-index: -1;
-          }
-          50%{
-            top: 100%;
-            transform: translateX(-50%) translateY(-100%) scale(0.5);
-            opacity: 0.75;
-          }
-          75%{
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.5;
-            z-index: 1;
-          }
-          100%{
-            top: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.75;
+        .line {
+          width: calc(100% - 1.5em);
+          height: 0.25em;
+          border-radius: 1em;
+          background: var(--color);
+          margin-left: auto;
+          transform-origin: center right;
+          animation: inherit;
+          animation-name: scale-line;
+          @keyframes scale-line {
+            50% {
+              transform: scaleX(0.1);
+            }
           }
         }
 
-        @keyframes afterAnimate{
-          0%{
-            bottom: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.25;
-          }
-          25%{
-            transform: translateX(-50%) translateY(-100%) scale(0.5);
-            opacity: 1;
-            z-index: 1;
-          }
-          50%{
-            bottom: 100%;
-            transform: translateX(-50%) translateY(100%) scale(0.5);
-            opacity: 0.75;
-          }
-          75%{
-            transform: translateX(-50%) translateY(-100%) scale(0.5);
-            opacity: 0.50;
-            z-index: -1;
-          }
-          100%{
-            bottom: 0;
-            transform: translateX(-50%) translateY(0) scale(0.5);
-            opacity: 0.75;
-          }
-        }
-
-        @keyframes rotateDna{
-          0%{
-            transform: rotate(0deg);
-          }
-          100%{
-            transform: rotate(360deg);
-          }
-        }
       </style>
-      <div class="container">
-      <div class="dnaloader">
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      <div class="spike"></div>
-      </div>
+      <div class="helix" style="--total:20">
+        <div class="strand" style="--i:1">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:2">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:3">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:4">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:5">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:6">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:7">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:8">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:9">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:10">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:11">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:12">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:13">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:14">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:15">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:16">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:17">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:18">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:19">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="strand" style="--i:20">
+          <div class="left">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="right">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
       </div>
     </div>
 	</foreignObject>
