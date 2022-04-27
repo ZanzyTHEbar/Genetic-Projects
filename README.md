@@ -7,9 +7,11 @@
 </div>
 <br>
 
+[![GitHub issues](https://img.shields.io/github/issues/ZanzyTHEbar/Genetic-Projects?style=plastic)](https://github.com/ZanzyTHEbar/Genetic-Projects/issues) [![GitHub forks](https://img.shields.io/github/forks/ZanzyTHEbar/Genetic-Projects?style=plastic)](https://github.com/ZanzyTHEbar/Genetic-Projects/network) [![GitHub stars](https://img.shields.io/github/stars/ZanzyTHEbar/Genetic-Projects?style=plastic)](https://github.com/ZanzyTHEbar/Genetic-Projects/stargazers) [![GitHub license](https://img.shields.io/github/license/ZanzyTHEbar/Genetic-Projects?style=plastic)](https://github.com/ZanzyTHEbar/Genetic-Projects/blob/main/LICENSE)
+
 # :man_technologist: [ZanzyTHEbar](https://ZanzyTHEbar.github.io)
 
-## 🧬 Our Projects
+## 🧬 My Projects
 
 <!-- START OF PROFILE STACK, DO NOT REMOVE -->
 
